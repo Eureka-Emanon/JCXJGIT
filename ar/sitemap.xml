@@ -10,6 +10,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="ja"
+                href="https://github.com/Eureka-Emanon.github.io/IT-Association/ja/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="zh-cn"
                 href="https://github.com/Eureka-Emanon.github.io/IT-Association/categories/"
                 />
@@ -17,11 +22,6 @@
                 rel="alternate"
                 hreflang="zh-tw"
                 href="https://github.com/Eureka-Emanon.github.io/IT-Association/zh-tw/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://github.com/Eureka-Emanon.github.io/IT-Association/ja/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -37,6 +37,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-tw"
+                href="https://github.com/Eureka-Emanon.github.io/IT-Association/zh-tw/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="ja"
                 href="https://github.com/Eureka-Emanon.github.io/IT-Association/ja/tags/"
                 />
@@ -44,11 +49,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://github.com/Eureka-Emanon.github.io/IT-Association/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://github.com/Eureka-Emanon.github.io/IT-Association/zh-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"

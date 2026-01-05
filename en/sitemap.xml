@@ -5,6 +5,11 @@
     <loc>https://eureka-emanon.github.io/JCXJGIT/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-tw"
+                href="https://eureka-emanon.github.io/JCXJGIT/zh-tw/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="ja"
                 href="https://eureka-emanon.github.io/JCXJGIT/ja/categories/"
                 />
@@ -12,11 +17,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://eureka-emanon.github.io/JCXJGIT/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://eureka-emanon.github.io/JCXJGIT/zh-tw/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -59,6 +59,11 @@
     <loc>https://eureka-emanon.github.io/JCXJGIT/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
+                hreflang="zh-tw"
+                href="https://eureka-emanon.github.io/JCXJGIT/zh-tw/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="ja"
                 href="https://eureka-emanon.github.io/JCXJGIT/ja/tags/"
                 />
@@ -66,11 +71,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://eureka-emanon.github.io/JCXJGIT/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://eureka-emanon.github.io/JCXJGIT/zh-tw/tags/"
                 />
     <xhtml:link
                 rel="alternate"

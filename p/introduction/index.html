@@ -224,7 +224,46 @@
     </ol>
 </aside>
 
-    
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#前言">前言</a></li>
+        <li><a href="#搭建博客页面">搭建博客页面</a></li>
+        <li><a href="#域名">域名</a></li>
+        <li><a href="#自动部署">自动部署</a></li>
+        <li><a href="#总结">总结</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
 
             <main class="main full-width">
     <article class="has-image main-article">
@@ -299,8 +338,27 @@
     
     <h1 id="测试中">测试中
 </h1><blockquote>
+<p>别在意封面，随便拿来做个测试</p>
 <p>接下来我将介绍此网站的部署流程</p>
 </blockquote>
+<h3 id="前言">前言
+</h3><p>如果你能看到这篇文章，你大概是技术部的成员，现在网页还在初始的搭建，也许我应该在主页裱上一个大大的“施工中”，预告这里的混乱情况。</p>
+<p>如你所见，这是我为社团搭建的博客，我将为你介绍搭建这个网站的流程，以便你可以初步了解未来我们的工作。</p>
+<h3 id="搭建博客页面">搭建博客页面
+</h3><p>我参考了这个视频:(<a class="link" href="https://www.bilibili.com/video/BV1bovfeaEtQ/?spm_id_from=333.1391.0.0&amp;p=4&amp;vd_source=2ea1d9de6153aae330a32af9e11be389"  target="_blank" rel="noopener"
+    >https://www.bilibili.com/video/BV1bovfeaEtQ/?spm_id_from=333.1391.0.0&p=4&vd_source=2ea1d9de6153aae330a32af9e11be389</a>)部署网页。使用hugo+stack-theme搭建。部分配置由于版本不同需要修改，但是跟着教程做下来也没有难度。由于过于简单，我甚至很难说我&quot;搭建&quot;了这个网页。</p>
+<p>如果你对搭建网页感兴趣，即是你是计算机小白，你也可以立刻跟着这个视频在很短的时间内搭建好你自己的博客。容易使你顿住的环节可能在于网络连接，如果你此前并没有登录过github。你需要为你的GitHub访问加速，事实上，很多游戏加速器都内置了GitHub加速功能。</p>
+<p>如果你没有连接过github，你大概也没有使用过git,命令行的操作可能会使你费解，但你也只需要记住基本的命令就足够。我们会在接下来的时间内编辑文章介绍git，但那要等到笔者对git的使用也更加熟悉之后。</p>
+<h3 id="域名">域名
+</h3><p>如果你跟着视频部署好了网页，那么你的网页的地址应该类似于xxx.github.io，但这个网站的地址并非如此，这是因为我为该网站申请了一个免费的域名jcxjgit.dpdns.org。事实上，对于你的个人博客，把它自己挂靠在自己的github下也没有什么问题，但考虑到这是社团博客，我实验性地申请了一个域名，也就是你现在访问的这个。你也许会绝得这个域名不够简洁好记，是的，我也这么觉得。其实只需要一年20元左右就能申请到一个后缀简洁好记的域名了，但由于最初的实验性质，我还是申请了一个免费的域名，后续有需要的话，也许我们可以购买一个新的域名。</p>
+<p>在申请了一个新域名之后，为了这个新域名的安全和浏览速度，我用免费额度申请了一个cloudfare的服务。具体的流程可以参考这个视频：(<a class="link" href="https://www.bilibili.com/video/BV12AyEBuECf/?spm_id_from=333.1391.0.0&amp;vd_source=2ea1d9de6153aae330a32af9e11be389"  target="_blank" rel="noopener"
+    >https://www.bilibili.com/video/BV12AyEBuECf/?spm_id_from=333.1391.0.0&vd_source=2ea1d9de6153aae330a32af9e11be389</a>)</p>
+<p>其中最容易打断你的问题仍然是网络问题。</p>
+<h3 id="自动部署">自动部署
+</h3><p>在新的域名准备妥当后，将其填入你按照第一个教程创建的托管静态网页的public仓库的设置项：Setting-&gt;Pages的custom domain选项框中（比方说我填入的就是www.JCXJGIT.dpdns.org）。</p>
+<p>如果你真的按我上面的这么做了，在你第一次给private仓库提交修改之后，你大概无法通过新域名访问网页了。这是因为你在public仓库的custom domain选项框中填入的域名被清空了，这意味着你在每一次提交修改后都还需要手动在这个页面填入你自己申请的域名。这当然很不方便，所以我请AI大人用python写了个脚本，每次执行完push命令后手动执行该脚本就能重新设置custom domain。这当然不是很聪明的方式，但好在我也不是什么很聪明的人。</p>
+<h3 id="总结">总结
+</h3><p>如果你想部署一个自己的网页，那么你只需要参考第一个视频即可。后面的只是我的碎碎念，这篇文章实际并没有参考价值，只是我的又一次失败。无妨，先推送上去试试水。</p>
 
 </section>
 

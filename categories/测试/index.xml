@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on 江财现经管IT协会</title>
-        <link>https://www.jcxjgit.dpdns.org/post/</link>
-        <description>Recent content in Posts on 江财现经管IT协会</description>
+        <title>测试 on 江财现经管IT协会</title>
+        <link>https://www.jcxjgit.dpdns.org/categories/%E6%B5%8B%E8%AF%95/</link>
+        <description>Recent content in 测试 on 江财现经管IT协会</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>JCXJG IT-ASSOCIATION</copyright>
-        <lastBuildDate>Tue, 06 Jan 2026 17:43:51 +0800</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 06 Jan 2026 17:43:51 +0800</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/categories/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>A Simple Introduction</title>
         <link>https://www.jcxjgit.dpdns.org/p/a-simple-introduction/</link>
         <pubDate>Tue, 06 Jan 2026 17:43:51 +0800</pubDate>
@@ -18,14 +18,6 @@
 &lt;p&gt;这篇文章将向诸位介绍此站点部署的流程。&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        </item>
-        <item>
-        <title>FirstHelloFromIT</title>
-        <link>https://www.jcxjgit.dpdns.org/p/firsthellofromit/</link>
-        <pubDate>Mon, 05 Jan 2026 22:19:13 +0800</pubDate>
-        
-        <guid>https://www.jcxjgit.dpdns.org/p/firsthellofromit/</guid>
-        <description></description>
         </item>
         
     </channel>

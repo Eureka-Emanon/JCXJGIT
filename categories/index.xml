@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on 江财现经管IT协会</title>
-        <link>https://eureka-emanon.github.io/JCXJGIT/categories/</link>
+        <link>https://www.jcxjgit.dpdns.org/categories/</link>
         <description>Recent content in Categories on 江财现经管IT协会</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>JCXJG IT-ASSOCIATION</copyright><atom:link href="https://eureka-emanon.github.io/JCXJGIT/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <copyright>JCXJG IT-ASSOCIATION</copyright><atom:link href="https://www.jcxjgit.dpdns.org/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Test</title>
-        <link>https://eureka-emanon.github.io/JCXJGIT/categories/test/</link>
+        <link>https://www.jcxjgit.dpdns.org/categories/test/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://eureka-emanon.github.io/JCXJGIT/categories/test/</guid>
-        <description>&lt;img src="https://eureka-emanon.github.io/JCXJGIT/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
+        <guid>https://www.jcxjgit.dpdns.org/categories/test/</guid>
+        <description>&lt;img src="https://www.jcxjgit.dpdns.org/categories/test/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Test" /&gt;</description>
         </item>
         
     </channel>

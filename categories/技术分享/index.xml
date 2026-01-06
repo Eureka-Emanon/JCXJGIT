@@ -7,15 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>JCXJG IT-ASSOCIATION</copyright>
-        <lastBuildDate>Tue, 06 Jan 2026 17:43:51 +0800</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>A Simple Introduction</title>
-        <link>https://www.jcxjgit.dpdns.org/p/a-simple-introduction/</link>
-        <pubDate>Tue, 06 Jan 2026 17:43:51 +0800</pubDate>
+        <lastBuildDate>Tue, 06 Jan 2026 19:40:26 +0800</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>INTRODUCTION</title>
+        <link>https://www.jcxjgit.dpdns.org/p/introduction/</link>
+        <pubDate>Tue, 06 Jan 2026 19:40:26 +0800</pubDate>
         
-        <guid>https://www.jcxjgit.dpdns.org/p/a-simple-introduction/</guid>
-        <description>&lt;p&gt;#介绍&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这篇文章将向诸位介绍此站点部署的流程。&lt;/p&gt;
+        <guid>https://www.jcxjgit.dpdns.org/p/introduction/</guid>
+        <description>&lt;img src="https://www.jcxjgit.dpdns.org/p/introduction/Introduction_cover.jpg" alt="Featured image of post INTRODUCTION" /&gt;&lt;h1 id=&#34;测试中&#34;&gt;测试中
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;接下来我将介绍此网站的部署流程&lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         </item>

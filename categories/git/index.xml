@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on 江财现经管IT协会</title>
-        <link>https://www.jcxjgit.dpdns.org/post/</link>
-        <description>Recent content in Posts on 江财现经管IT协会</description>
+        <title>Git on 江财现经管IT协会</title>
+        <link>https://www.jcxjgit.dpdns.org/categories/git/</link>
+        <description>Recent content in Git on 江财现经管IT协会</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>JCXJG IT-ASSOCIATION</copyright>
-        <lastBuildDate>Wed, 07 Jan 2026 16:08:34 +0800</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/post/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>网站施工中</title>
-        <link>https://www.jcxjgit.dpdns.org/p/%E7%BD%91%E7%AB%99%E6%96%BD%E5%B7%A5%E4%B8%AD/</link>
-        <pubDate>Mon, 05 Jan 2026 22:19:13 +0800</pubDate>
-        
-        <guid>https://www.jcxjgit.dpdns.org/p/%E7%BD%91%E7%AB%99%E6%96%BD%E5%B7%A5%E4%B8%AD/</guid>
-        <description>&lt;img src="https://www.jcxjgit.dpdns.org/p/%E7%BD%91%E7%AB%99%E6%96%BD%E5%B7%A5%E4%B8%AD/building.png" alt="Featured image of post 网站施工中" /&gt;</description>
-        </item>
-        <item>
+        <lastBuildDate>Wed, 07 Jan 2026 16:08:34 +0800</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/categories/git/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Git_Github</title>
         <link>https://www.jcxjgit.dpdns.org/p/git_github/</link>
         <pubDate>Wed, 07 Jan 2026 16:08:34 +0800</pubDate>
@@ -398,128 +390,6 @@ commit-3(he1)
 &lt;p&gt;也许你并没有完全理解其中的逻辑，但是也不妨碍你进行接下来的实验，别灰心！&lt;/p&gt;
 &lt;h2 id=&#34;github&#34;&gt;Github
 &lt;/h2&gt;</description>
-        </item>
-        <item>
-        <title>INTRODUCTION</title>
-        <link>https://www.jcxjgit.dpdns.org/p/introduction/</link>
-        <pubDate>Tue, 06 Jan 2026 19:40:26 +0800</pubDate>
-        
-        <guid>https://www.jcxjgit.dpdns.org/p/introduction/</guid>
-        <description>&lt;img src="https://www.jcxjgit.dpdns.org/p/introduction/Introduction_cover.jpg" alt="Featured image of post INTRODUCTION" /&gt;&lt;h1 id=&#34;测试中&#34;&gt;测试中
-&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;别在意封面，随便拿来做个测试&lt;/p&gt;
-&lt;p&gt;接下来我将介绍此网站的部署流程&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&#34;前言&#34;&gt;前言
-&lt;/h3&gt;&lt;p&gt;如果你能看到这篇文章，你大概是技术部的成员，现在网页还在初始的搭建，也许我应该在主页裱上一个大大的“施工中”，预告这里的混乱情况。&lt;/p&gt;
-&lt;p&gt;如你所见，这是我为社团搭建的博客，我将为你介绍搭建这个网站的流程，以便你可以初步了解未来我们的工作。&lt;/p&gt;
-&lt;h3 id=&#34;搭建博客页面&#34;&gt;搭建博客页面
-&lt;/h3&gt;&lt;p&gt;我参考了这个视频:(&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1bovfeaEtQ/?spm_id_from=333.1391.0.0&amp;amp;p=4&amp;amp;vd_source=2ea1d9de6153aae330a32af9e11be389&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.bilibili.com/video/BV1bovfeaEtQ/?spm_id_from=333.1391.0.0&amp;p=4&amp;vd_source=2ea1d9de6153aae330a32af9e11be389&lt;/a&gt;)部署网页。使用hugo+stack-theme搭建。部分配置由于版本不同需要修改，但是跟着教程做下来也没有难度。由于过于简单，我甚至很难说我&amp;quot;搭建&amp;quot;了这个网页。&lt;/p&gt;
-&lt;p&gt;如果你对搭建网页感兴趣，即是你是计算机小白，你也可以立刻跟着这个视频在很短的时间内搭建好你自己的博客。容易使你顿住的环节可能在于网络连接，如果你此前并没有登录过github。你需要为你的GitHub访问加速，事实上，很多游戏加速器都内置了GitHub加速功能（但是我推荐你优先尝试直接连接Github，而不是通过如steam++的游戏加速器，它们可能导致你无法拉取GitHub仓库）。&lt;/p&gt;
-&lt;p&gt;如果你没有连接过github，你大概也没有使用过git,命令行的操作可能会使你费解，但你也只需要记住基本的命令就足够。我们会在接下来的时间内编辑文章介绍git，但那要等到笔者对git的使用也更加熟悉之后。&lt;/p&gt;
-&lt;h3 id=&#34;域名&#34;&gt;域名
-&lt;/h3&gt;&lt;p&gt;如果你跟着视频部署好了网页，那么你的网页的地址应该类似于xxx.github.io，但这个网站的地址并非如此，这是因为我为该网站申请了一个免费的域名jcxjgit.dpdns.org。事实上，对于你的个人博客，把它自己挂靠在自己的github下也没有什么问题，但考虑到这是社团博客，我实验性地申请了一个域名，也就是你现在访问的这个。你也许会绝得这个域名不够简洁好记，是的，我也这么觉得。其实只需要一年20元左右就能申请到一个后缀简洁好记的域名了，但由于最初的实验性质，我还是申请了一个免费的域名，后续有需要的话，也许我们可以购买一个新的域名。&lt;/p&gt;
-&lt;p&gt;在申请了一个新域名之后，为了这个新域名的安全和浏览速度，我用免费额度申请了一个cloudfare的服务。具体的流程可以参考这个视频：(&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV12AyEBuECf/?spm_id_from=333.1391.0.0&amp;amp;vd_source=2ea1d9de6153aae330a32af9e11be389&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.bilibili.com/video/BV12AyEBuECf/?spm_id_from=333.1391.0.0&amp;vd_source=2ea1d9de6153aae330a32af9e11be389&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;其中最容易打断你的问题仍然是网络问题。&lt;/p&gt;
-&lt;h3 id=&#34;自动部署&#34;&gt;自动部署
-&lt;/h3&gt;&lt;p&gt;在新的域名准备妥当后，将其填入你按照第一个教程创建的托管静态网页的public仓库的设置项：Setting-&amp;gt;Pages的custom domain选项框中（比方说我填入的就是www.JCXJGIT.dpdns.org）。&lt;/p&gt;
-&lt;p&gt;如果你真的按我上面的这么做了，在你第一次给private仓库提交修改之后，你大概无法通过新域名访问网页了。这是因为你在public仓库的custom domain选项框中填入的域名被清空了，这意味着你在每一次提交修改后都还需要手动在这个页面填入你自己申请的域名。这当然很不方便，所以我请AI大人用python写了个脚本，每次执行完push命令后手动执行该脚本就能重新设置custom domain。这当然不是很聪明的方式，但好在我也不是什么很聪明的人。&lt;/p&gt;
-&lt;h3 id=&#34;总结&#34;&gt;总结
-&lt;/h3&gt;&lt;p&gt;如果你想部署一个自己的网页，那么你只需要参考第一个视频即可。后面的只是我的碎碎念，这篇文章实际并没有参考价值，只是我的又一次失败。无妨，先推送上去试试水。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Chinese Test</title>
-        <link>https://www.jcxjgit.dpdns.org/p/test-chinese/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.jcxjgit.dpdns.org/p/test-chinese/</guid>
-        <description>&lt;img src="https://www.jcxjgit.dpdns.org/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试
-&lt;/h2&gt;&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
-&lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
-&lt;h2 id=&#34;引用&#34;&gt;引用
-&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;思念是最暖的忧伤像一双翅膀&lt;br&gt;
-让我停不了飞不远在过往游荡&lt;br&gt;
-不告而别的你 就算为了我着想&lt;br&gt;
-这么沉痛的呵护 我怎么能翱翔&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;图片&#34;&gt;图片
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
-	width=&#34;667&#34;
-	height=&#34;1000&#34;
-	srcset=&#34;https://www.jcxjgit.dpdns.org/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_7b8a06820e6d5c.jpg 480w, https://www.jcxjgit.dpdns.org/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu_a347f10e565b40ff.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;66&#34;
-		data-flex-basis=&#34;160px&#34;
-	
-&gt;  &lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
-	width=&#34;1000&#34;
-	height=&#34;667&#34;
-	srcset=&#34;https://www.jcxjgit.dpdns.org/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_258fc4da0cfc7de9.jpg 480w, https://www.jcxjgit.dpdns.org/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu_d415bcea096fe061.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Luca Bravo on Unsplash&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;149&#34;
-		data-flex-basis=&#34;359px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
-	width=&#34;1000&#34;
-	height=&#34;750&#34;
-	srcset=&#34;https://www.jcxjgit.dpdns.org/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_dfbb0c559c3df461.jpg 480w, https://www.jcxjgit.dpdns.org/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu_212d0718b8e99eaa.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Helena Hertz on Unsplash&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;133&#34;
-		data-flex-basis=&#34;320px&#34;
-	
-&gt;  &lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
-	width=&#34;667&#34;
-	height=&#34;1000&#34;
-	srcset=&#34;https://www.jcxjgit.dpdns.org/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_41819e288bf4a8c0.jpg 480w, https://www.jcxjgit.dpdns.org/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hu_1277885c87f69490.jpg 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;66&#34;
-		data-flex-basis=&#34;160px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Photo by Florian Klauer on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;florian-klauer-nptLmg6jqDo-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Luca Bravo on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;luca-bravo-alS7ewQ41M8-unsplash.jpg&lt;/span&gt;) 
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Photo by Helena Hertz on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;helena-hertz-wWZzXlDpMog-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Hudai Gayiran on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;相册语法来自 &lt;a class=&#34;link&#34; href=&#34;https://typlog.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Typlog&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;字体&#34;&gt;字体
-&lt;/h2&gt;&lt;p&gt;返扇花週認契適違込遷雇述請曜藤突扉直角&lt;/p&gt;
-</description>
         </item>
         
     </channel>

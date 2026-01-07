@@ -7,7 +7,391 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>JCXJG IT-ASSOCIATION</copyright>
-        <lastBuildDate>Tue, 06 Jan 2026 19:40:26 +0800</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 07 Jan 2026 16:08:34 +0800</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Git_Github</title>
+        <link>https://www.jcxjgit.dpdns.org/p/git_github/</link>
+        <pubDate>Wed, 07 Jan 2026 16:08:34 +0800</pubDate>
+        
+        <guid>https://www.jcxjgit.dpdns.org/p/git_github/</guid>
+        <description>&lt;img src="https://www.jcxjgit.dpdns.org/p/git_github/cover.jpg" alt="Featured image of post Git_Github" /&gt;&lt;!-- 从这里开始撰写你的正文 --&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;参与本文末尾的简单实验，留下你想说的话。&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;前言&#34;&gt;前言
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Git：一个版本管理工具。它提供了类似类比于游戏存档的功能。有了存档，我们就可以方便地保存进度，在不同的节点之间转移。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Github: Github为你提供了存放Git仓库的服务器。你可以把自己的仓库上传到Github，就像保存存档到云端；你也可以拉取别人的仓库，就像获得了别人的游戏存档。所以Github同时也是一个强调开源分享的社区，你可以在Github上找到许多有趣的分享。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果你是CS(Computer Science)相关专业的学生，git与github是你必须掌握的技能。如果你对Github社区或是我们的工作感兴趣，你也可以阅读这篇文章了解使用git工作的简单流程。此文会提供简单的实验，通过完成实验，你可以直接参与到网页的搭建中并留下你的名字。&lt;/p&gt;
+&lt;p&gt;让我们开始吧。&lt;/p&gt;
+&lt;h1 id=&#34;安装git注册github账号&#34;&gt;安装Git，注册Github账号
+&lt;/h1&gt;&lt;p&gt;请参考这个视频：&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Hkr7YYEh8/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2ea1d9de6153aae330a32af9e11be389&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;给傻子的github教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;由于你聪明的并不是傻子，所以你不需要看完整个个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。&lt;/p&gt;
+&lt;p&gt;如果你只想参与到留言中，你可以跳过 Git 段落，直接阅读 Github 段落。&lt;/p&gt;
+&lt;h2 id=&#34;git&#34;&gt;Git
+&lt;/h2&gt;&lt;p&gt;这个版块将为你简单介绍git的工作原理。&lt;/p&gt;
+&lt;p&gt;请你创建一个新的文件目录命名为GTest,并在该路径下打开cmd（以防你不知道，直接点击下图箭头指向的位置输入cmd即可）。输入下面的命令：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/git_github/0.png&#34;
+	width=&#34;1863&#34;
+	height=&#34;388&#34;
+	srcset=&#34;https://www.jcxjgit.dpdns.org/p/git_github/0_hu_df2521d6fad9d2bb.png 480w, https://www.jcxjgit.dpdns.org/p/git_github/0_hu_4b09b17dc564888b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;点击箭头指向的框的空白处输入cmd&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;480&#34;
+		data-flex-basis=&#34;1152px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;如果你此时已经安装了git并设置好了环境变量，你应该能看到版本信息输出。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/git_github/1.png&#34;
+	width=&#34;2558&#34;
+	height=&#34;322&#34;
+	srcset=&#34;https://www.jcxjgit.dpdns.org/p/git_github/1_hu_9b394c764209a81f.png 480w, https://www.jcxjgit.dpdns.org/p/git_github/1_hu_b34d808011211b41.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;我的输出如图&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;794&#34;
+		data-flex-basis=&#34;1906px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在你第一次使用git前，你应该为你的git设置一个用户名与邮箱，尽管这个用户名与邮箱地址是任意的，我建议你使用与你注册GitHub所用的相同的用户名与邮箱，在cmd输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.name &lt;span class=&#34;s2&#34;&gt;&amp;#34;这里输入你的用户名&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git config --global user.email &lt;span class=&#34;s2&#34;&gt;&amp;#34;这里输入你的邮箱地址&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;注意使用英文的双引号。&lt;/p&gt;
+&lt;h3 id=&#34;initaddcommit&#34;&gt;init,add,commit
+&lt;/h3&gt;&lt;p&gt;请你创建两个空的后缀为.txt的文件，分别命名为demo1和demo2，并在cmd中输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;你的文件目录下应该多出一个.git文件，cmd中有如下输出。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;.git文件是隐藏文件，如果你的目录中看不到.git文件，有可能是因为你没有开启隐藏文件显示。点击文件管理器上方选项卡的“查看”，将“显示”中的“隐藏的项目”勾选上。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/git_github/3.jpg&#34;
+	width=&#34;1404&#34;
+	height=&#34;399&#34;
+	srcset=&#34;https://www.jcxjgit.dpdns.org/p/git_github/3_hu_fa913e2114211115.jpg 480w, https://www.jcxjgit.dpdns.org/p/git_github/3_hu_85a60c4d4a0fc665.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;git init输出&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;351&#34;
+		data-flex-basis=&#34;844px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;git init命令，即初始化命令，意味着我们要将此文件目录下的内容交给git管理。我们得到的输出Initialized empty repository in &amp;hellip;意味着git已经帮你在该目录下构建了一个管理用的git仓库。&lt;/p&gt;
+&lt;p&gt;该仓库现在是空的，因为我们只是告知git构建了一个仓库，还没有真正告知git应该管理那些数据，我们接着在cmd中输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add demo1.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这条命令意味着我们将demo1.txt添加进了git的缓冲区（staging area）里，git会追踪（track）被添加进缓冲区中的数据。cmd中输入命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这条命令列出了当前git的状态，，我们可以看到输出中有如下字样&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Changes to be committed:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;use &lt;span class=&#34;s2&#34;&gt;&amp;#34;git rm --cached &amp;lt;file&amp;gt;...&amp;#34;&lt;/span&gt; to unstage&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    new file: demo1.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Untracked files:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;use &lt;span class=&#34;s2&#34;&gt;&amp;#34;git add &amp;lt;file&amp;gt;...&amp;#34;&lt;/span&gt; to include in what will be committed&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        demo2.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;可以看到，demo1.txt已经被track了，尚未被提交（to be committed）,demo2.txt属于untraked file。&lt;/p&gt;
+&lt;p&gt;执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add demo1.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;#注意，点号必须用英文标点。点号代码此目录下所有文件。&lt;/p&gt;
+&lt;p&gt;打开demo1.txt，写入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;how r u
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;记得按CTRL+S保存，并在cmd输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add demo1.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;first commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;由于我们修改了demo1.txt文件，我们需要再一次把它add进缓冲区中，而git commit命令会一次性把缓冲区中所有的数据提交到git仓库中，-m代表后面要跟一个双引号包裹的字符串描述这次提交。我们暂时不add demo2.txt&lt;/p&gt;
+&lt;p&gt;执行完你应该会得到&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;master f58fa26&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; first commit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; file changed, &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; insertion&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;+&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;一个文件改变了，一行新增。&lt;/p&gt;
+&lt;p&gt;接着请你将demo1.txt中的how r u改写并保存为how old r u，再次执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add demo1.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;second commit&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git log
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;得到&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;commit d84c9738c2a9ba687e8fed97574de6a570268825 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;HEAD -&amp;gt; master&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Author: username email-address
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Date:   Wed Jan &lt;span class=&#34;m&#34;&gt;7&lt;/span&gt; 19:42:00 &lt;span class=&#34;m&#34;&gt;2026&lt;/span&gt; +0800
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    second commit
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;commit f58fa267f22a423518e3758c2c9b7657744428e7 &lt;span class=&#34;c1&#34;&gt;#独一无二的hash值&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Author: username email-address
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Date:   Wed Jan &lt;span class=&#34;m&#34;&gt;7&lt;/span&gt; 19:38:09 &lt;span class=&#34;m&#34;&gt;2026&lt;/span&gt; +0800
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    first commit
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;log命令用以查看git日志，你应该会得到类似的两段输出信息，Author包括了你之前设置的用户名和邮箱地址，以及我们提交时写的first commit和second commit的描述信息，Date字段当然描述了时间，还有每一段commit行后面跟的一长串的字符，它们是hash值，唯一确定的记录了一个commit，下文还会讲到它。&lt;/p&gt;
+&lt;h3 id=&#34;branchhead&#34;&gt;branch,Head
+&lt;/h3&gt;&lt;p&gt;现在我们一共有两个commit，在第一个commit中，demo1.txt被写入了how r u，在第二个commit中,demo1.txt被写入了how old r u。我们按先后将它们记作commit-0和commit-1，有关系图如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;commit-0 &amp;lt;- commit-1
+                ^
+                |
+      Head -&amp;gt; master(main)    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;你也许会问，为什么是指向前一个commit的箭头呢？你可以理解为：每一个存档被保存时记录的是自己过去游玩到了什么进度，也方便回档重来。多个commit的存储方式类似于一个前向链表。&lt;/p&gt;
+&lt;p&gt;你也许还要问，master是什么？简单来说，master像一个指针，它总是指向一个branch（分支）的末尾，这个分支就名为master分支（或者叫main分支）。&lt;/p&gt;
+&lt;p&gt;那么head呢？它也像一个指针，指向一个branch或直接指向一个commit，它默认指向master branch。&lt;/p&gt;
+&lt;p&gt;让我们创建一个分支来解释这一切吧！&lt;/p&gt;
+&lt;p&gt;还记得先前提到的hash值吗？首先执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git checkout 复制你的第一次commit的hash值到此
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;你会得到如下的段落，不要害怕，让我告诉你发生了什么&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Note: switching to &lt;span class=&#34;s1&#34;&gt;&amp;#39;f58fa267f22a423518&amp;#39;&lt;/span&gt;.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;You are in &lt;span class=&#34;s1&#34;&gt;&amp;#39;detached HEAD&amp;#39;&lt;/span&gt; state. You can look around, make experimental
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;changes and commit them, and you can discard any commits you make in this
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;state without impacting any branches by switching back to a branch.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;略略略
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在执行了checkout命令后，Head脱离master，直接指向了命令中指定的hash值对应的commit，即：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; commit-0 &amp;lt;- commit-1               
+   ^           ^
+   |           |
+  Head       master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这样我们就来到了commit-0(first commit)。&lt;/p&gt;
+&lt;p&gt;Head此时指向commit-0，如果你继续提交新的commit,Head会接着指向新的commit，这个新的commit接在commit-0之后，也就是一个新的分支，但由于你没有给这个分支命名（没有指定一个标记了这个分支的指针），当你再一次使用checkout命令使Head去到另一个commit上时，git就会丢失你新提交的全部commit。这就是所谓的detached HEAD。&lt;/p&gt;
+&lt;p&gt;还记得吗？first commit中，我们在demo1.txt中写入了how r u（“怎么是你”）并提交，demo2.txt没有文字；second commit中，我们在demo1.txt中写入how old r u(“怎么老是你”)，demo2.txt也没有做任何回应，肯定是be了。呜呜呜，让我们从现在所处的commit 0开始，创建一个有he的分支吧Q_Q&lt;/p&gt;
+&lt;p&gt;执行！&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git branch he 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;创建了一个由he指向的新分支，即：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;commit-0 &amp;lt;- commit-1
+ ^  ^          ^
+ |  |          |
+ he Head      master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;记得上文所说的吗，如果你没有给新的分支命名，你在Head基础上提交的全部commit都会最终丢失，不仅如此，现在你为新分支指定了一个he指针，你就应该使Head指向he指针，通过he指针操纵新分支。也就是说，Head被设计为用来在各个commit间跳转，如果要构建分支，请使Head属于分支指针。你也许注意到了，之前的log输出中，有Head-&amp;gt;master的字样。&lt;/p&gt;
+&lt;p&gt;所以接着执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git checkout he
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;即：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;commit-0 &amp;lt;- commit-1
+    ^          ^
+    |          |
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Head -&amp;gt; he       master&lt;/p&gt;
+&lt;p&gt;如果你不执行这条命令，会导致he不被你操作，留在原地，这样新的commit仍然不属于任何分支。&lt;/p&gt;
+&lt;p&gt;打开demo2.txt，写入 im fine how r u&lt;/p&gt;
+&lt;p&gt;执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;he0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;git add . 命令中的点注意用英文标点，点表示该目录下的全部文件&lt;/p&gt;
+&lt;p&gt;把第三次commit记作commit-2，图示有：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;commit-0 &amp;lt;- commit-1
+   ^           ^
+   |           |
+commit-2     master
+ ^    
+ |    
+ he &amp;lt;- Head
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;接着打开两个文档，写入 ^-^ 并保存，再执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;he1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git log
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;把第4次提交记作commit-3，有图示：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;commit-0 &amp;lt;- commit-1
+   ^           ^
+   |           |
+commit-2(he0) master
+   ^
+   |
+commit-3(he1)
+ ^    
+ |    
+ he &amp;lt;- Head 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;好了，现在你可以使用git checkout 哈希值 在同一个分支上跳转了，如果你想要跳转到主分支，那就输入git checkout master即可。&lt;/p&gt;
+&lt;p&gt;你可能会发现，在跳转于各个commit途中，demo2.txt文档消失了，那是因为在master分支上，我们至始至终没有add过demo2.txt到git的管理范围，所以你跳转的这些快照中不存在demo2.txt。你可以通过在最开始执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;为工作区初始状态构建一个快照&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;来构建一个你可以返回的初始状态。&lt;/p&gt;
+&lt;p&gt;也许你并没有完全理解其中的逻辑，但是也不妨碍你进行接下来的实验，别灰心！&lt;/p&gt;
+&lt;h2 id=&#34;github&#34;&gt;Github
+&lt;/h2&gt;</description>
+        </item>
+        <item>
         <title>INTRODUCTION</title>
         <link>https://www.jcxjgit.dpdns.org/p/introduction/</link>
         <pubDate>Tue, 06 Jan 2026 19:40:26 +0800</pubDate>
@@ -24,7 +408,7 @@
 &lt;h3 id=&#34;搭建博客页面&#34;&gt;搭建博客页面
 &lt;/h3&gt;&lt;p&gt;我参考了这个视频:(&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1bovfeaEtQ/?spm_id_from=333.1391.0.0&amp;amp;p=4&amp;amp;vd_source=2ea1d9de6153aae330a32af9e11be389&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.bilibili.com/video/BV1bovfeaEtQ/?spm_id_from=333.1391.0.0&amp;p=4&amp;vd_source=2ea1d9de6153aae330a32af9e11be389&lt;/a&gt;)部署网页。使用hugo+stack-theme搭建。部分配置由于版本不同需要修改，但是跟着教程做下来也没有难度。由于过于简单，我甚至很难说我&amp;quot;搭建&amp;quot;了这个网页。&lt;/p&gt;
-&lt;p&gt;如果你对搭建网页感兴趣，即是你是计算机小白，你也可以立刻跟着这个视频在很短的时间内搭建好你自己的博客。容易使你顿住的环节可能在于网络连接，如果你此前并没有登录过github。你需要为你的GitHub访问加速，事实上，很多游戏加速器都内置了GitHub加速功能。&lt;/p&gt;
+&lt;p&gt;如果你对搭建网页感兴趣，即是你是计算机小白，你也可以立刻跟着这个视频在很短的时间内搭建好你自己的博客。容易使你顿住的环节可能在于网络连接，如果你此前并没有登录过github。你需要为你的GitHub访问加速，事实上，很多游戏加速器都内置了GitHub加速功能（但是我推荐你优先尝试直接连接Github，而不是通过如steam++的游戏加速器，它们可能导致你无法拉取GitHub仓库）。&lt;/p&gt;
 &lt;p&gt;如果你没有连接过github，你大概也没有使用过git,命令行的操作可能会使你费解，但你也只需要记住基本的命令就足够。我们会在接下来的时间内编辑文章介绍git，但那要等到笔者对git的使用也更加熟悉之后。&lt;/p&gt;
 &lt;h3 id=&#34;域名&#34;&gt;域名
 &lt;/h3&gt;&lt;p&gt;如果你跟着视频部署好了网页，那么你的网页的地址应该类似于xxx.github.io，但这个网站的地址并非如此，这是因为我为该网站申请了一个免费的域名jcxjgit.dpdns.org。事实上，对于你的个人博客，把它自己挂靠在自己的github下也没有什么问题，但考虑到这是社团博客，我实验性地申请了一个域名，也就是你现在访问的这个。你也许会绝得这个域名不够简洁好记，是的，我也这么觉得。其实只需要一年20元左右就能申请到一个后缀简洁好记的域名了，但由于最初的实验性质，我还是申请了一个免费的域名，后续有需要的话，也许我们可以购买一个新的域名。&lt;/p&gt;

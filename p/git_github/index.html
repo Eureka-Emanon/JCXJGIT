@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="简要介绍Git与Github">
+<title>Git_Github</title>
+
+<link rel='canonical' href='https://www.jcxjgit.dpdns.org/p/git_github/'>
+
+<link rel="stylesheet" href="/scss/style.min.833d6eed45de56f48306bf57268d5b8cdfc8a60e8e7bdc99810464fcd033f7c6.css"><meta property='og:title' content="Git_Github">
+<meta property='og:description' content="简要介绍Git与Github">
+<meta property='og:url' content='https://www.jcxjgit.dpdns.org/p/git_github/'>
+<meta property='og:site_name' content='江财现经管IT协会'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2026-01-07T16:08:34&#43;08:00'/><meta property='article:modified_time' content='2026-01-07T16:08:34&#43;08:00'/><meta property='og:image' content='https://www.jcxjgit.dpdns.org/p/git_github/cover.jpg' />
+<meta name="twitter:title" content="Git_Github">
+<meta name="twitter:description" content="简要介绍Git与Github"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://www.jcxjgit.dpdns.org/p/git_github/cover.jpg' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_ee87b3cde35e698e.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">江财现经管IT协会</a></h1>
+            <h2 class="site-description">Hello Lain</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#git">Git</a>
+      <ol>
+        <li><a href="#initaddcommit">init,add,commit</a></li>
+        <li><a href="#branchhead">branch,Head</a></li>
+      </ol>
+    </li>
+    <li><a href="#github">Github</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/git_github/">
+                <img src="/p/git_github/cover_hu_f4a9c0df0193f501.jpg"
+                        srcset="/p/git_github/cover_hu_f4a9c0df0193f501.jpg 800w, /p/git_github/cover_hu_e3df7bfc1d301db2.jpg 1600w"
+                        width="800" 
+                        height="447" 
+                        loading="lazy"
+                        alt="Featured image of post Git_Github" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/git/" >
+                Git
+            </a>
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" >
+                技术分享
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/git_github/">Git_Github</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-01-07T16:08:34&#43;08:00'>Jan 07, 2026</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <!-- 从这里开始撰写你的正文 -->
+<blockquote>
+<p><em>参与本文末尾的简单实验，留下你想说的话。</em></p>
+</blockquote>
+<h1 id="前言">前言
+</h1><ul>
+<li>
+<p>Git：一个版本管理工具。它提供了类似类比于游戏存档的功能。有了存档，我们就可以方便地保存进度，在不同的节点之间转移。</p>
+</li>
+<li>
+<p>Github: Github为你提供了存放Git仓库的服务器。你可以把自己的仓库上传到Github，就像保存存档到云端；你也可以拉取别人的仓库，就像获得了别人的游戏存档。所以Github同时也是一个强调开源分享的社区，你可以在Github上找到许多有趣的分享。</p>
+</li>
+</ul>
+<p>如果你是CS(Computer Science)相关专业的学生，git与github是你必须掌握的技能。如果你对Github社区或是我们的工作感兴趣，你也可以阅读这篇文章了解使用git工作的简单流程。此文会提供简单的实验，通过完成实验，你可以直接参与到网页的搭建中并留下你的名字。</p>
+<p>让我们开始吧。</p>
+<h1 id="安装git注册github账号">安装Git，注册Github账号
+</h1><p>请参考这个视频：<a class="link" href="https://www.bilibili.com/video/BV1Hkr7YYEh8/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2ea1d9de6153aae330a32af9e11be389"  target="_blank" rel="noopener"
+    >给傻子的github教程</a></p>
+<p>由于你聪明的并不是傻子，所以你不需要看完整个个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。</p>
+<p>如果你只想参与到留言中，你可以跳过 Git 段落，直接阅读 Github 段落。</p>
+<h2 id="git">Git
+</h2><p>这个版块将为你简单介绍git的工作原理。</p>
+<p>请你创建一个新的文件目录命名为GTest,并在该路径下打开cmd（以防你不知道，直接点击下图箭头指向的位置输入cmd即可）。输入下面的命令：</p>
+<p><img src="/p/git_github/0.png"
+	width="1863"
+	height="388"
+	srcset="/p/git_github/0_hu_df2521d6fad9d2bb.png 480w, /p/git_github/0_hu_4b09b17dc564888b.png 1024w"
+	loading="lazy"
+	
+		alt="点击箭头指向的框的空白处输入cmd"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="480"
+		data-flex-basis="1152px"
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果你此时已经安装了git并设置好了环境变量，你应该能看到版本信息输出。</p>
+<p><img src="/p/git_github/1.png"
+	width="2558"
+	height="322"
+	srcset="/p/git_github/1_hu_9b394c764209a81f.png 480w, /p/git_github/1_hu_b34d808011211b41.png 1024w"
+	loading="lazy"
+	
+		alt="我的输出如图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="794"
+		data-flex-basis="1906px"
+	
+></p>
+<p>在你第一次使用git前，你应该为你的git设置一个用户名与邮箱，尽管这个用户名与邮箱地址是任意的，我建议你使用与你注册GitHub所用的相同的用户名与邮箱，在cmd输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;这里输入你的用户名&#34;</span>
+</span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;这里输入你的邮箱地址&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意使用英文的双引号。</p>
+<h3 id="initaddcommit">init,add,commit
+</h3><p>请你创建两个空的后缀为.txt的文件，分别命名为demo1和demo2，并在cmd中输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git init
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你的文件目录下应该多出一个.git文件，cmd中有如下输出。</p>
+<blockquote>
+<p>.git文件是隐藏文件，如果你的目录中看不到.git文件，有可能是因为你没有开启隐藏文件显示。点击文件管理器上方选项卡的“查看”，将“显示”中的“隐藏的项目”勾选上。</p>
+</blockquote>
+<p><img src="/p/git_github/3.jpg"
+	width="1404"
+	height="399"
+	srcset="/p/git_github/3_hu_fa913e2114211115.jpg 480w, /p/git_github/3_hu_85a60c4d4a0fc665.jpg 1024w"
+	loading="lazy"
+	
+		alt="git init输出"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="351"
+		data-flex-basis="844px"
+	
+></p>
+<p>git init命令，即初始化命令，意味着我们要将此文件目录下的内容交给git管理。我们得到的输出Initialized empty repository in &hellip;意味着git已经帮你在该目录下构建了一个管理用的git仓库。</p>
+<p>该仓库现在是空的，因为我们只是告知git构建了一个仓库，还没有真正告知git应该管理那些数据，我们接着在cmd中输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add demo1.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这条命令意味着我们将demo1.txt添加进了git的缓冲区（staging area）里，git会追踪（track）被添加进缓冲区中的数据。cmd中输入命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git status
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这条命令列出了当前git的状态，，我们可以看到输出中有如下字样</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Changes to be committed:
+</span></span><span class="line"><span class="cl">  <span class="o">(</span>use <span class="s2">&#34;git rm --cached &lt;file&gt;...&#34;</span> to unstage<span class="o">)</span>
+</span></span><span class="line"><span class="cl">    new file: demo1.txt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Untracked files:
+</span></span><span class="line"><span class="cl">  <span class="o">(</span>use <span class="s2">&#34;git add &lt;file&gt;...&#34;</span> to include in what will be committed<span class="o">)</span>
+</span></span><span class="line"><span class="cl">        demo2.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以看到，demo1.txt已经被track了，尚未被提交（to be committed）,demo2.txt属于untraked file。</p>
+<p>执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add demo1.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>#注意，点号必须用英文标点。点号代码此目录下所有文件。</p>
+<p>打开demo1.txt，写入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">how r u
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>记得按CTRL+S保存，并在cmd输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add demo1.txt
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;first commit&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>由于我们修改了demo1.txt文件，我们需要再一次把它add进缓冲区中，而git commit命令会一次性把缓冲区中所有的数据提交到git仓库中，-m代表后面要跟一个双引号包裹的字符串描述这次提交。我们暂时不add demo2.txt</p>
+<p>执行完你应该会得到</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">[</span>master f58fa26<span class="o">]</span> first commit
+</span></span><span class="line"><span class="cl"> <span class="m">1</span> file changed, <span class="m">1</span> insertion<span class="o">(</span>+<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>一个文件改变了，一行新增。</p>
+<p>接着请你将demo1.txt中的how r u改写并保存为how old r u，再次执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add demo1.txt
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;second commit&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git log
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>得到</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">commit d84c9738c2a9ba687e8fed97574de6a570268825 <span class="o">(</span>HEAD -&gt; master<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Author: username email-address
+</span></span><span class="line"><span class="cl">Date:   Wed Jan <span class="m">7</span> 19:42:00 <span class="m">2026</span> +0800
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    second commit
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">commit f58fa267f22a423518e3758c2c9b7657744428e7 <span class="c1">#独一无二的hash值</span>
+</span></span><span class="line"><span class="cl">Author: username email-address
+</span></span><span class="line"><span class="cl">Date:   Wed Jan <span class="m">7</span> 19:38:09 <span class="m">2026</span> +0800
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    first commit
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>log命令用以查看git日志，你应该会得到类似的两段输出信息，Author包括了你之前设置的用户名和邮箱地址，以及我们提交时写的first commit和second commit的描述信息，Date字段当然描述了时间，还有每一段commit行后面跟的一长串的字符，它们是hash值，唯一确定的记录了一个commit，下文还会讲到它。</p>
+<h3 id="branchhead">branch,Head
+</h3><p>现在我们一共有两个commit，在第一个commit中，demo1.txt被写入了how r u，在第二个commit中,demo1.txt被写入了how old r u。我们按先后将它们记作commit-0和commit-1，有关系图如下：</p>
+<pre><code>commit-0 &lt;- commit-1
+                ^
+                |
+      Head -&gt; master(main)    
+</code></pre>
+<p>你也许会问，为什么是指向前一个commit的箭头呢？你可以理解为：每一个存档被保存时记录的是自己过去游玩到了什么进度，也方便回档重来。多个commit的存储方式类似于一个前向链表。</p>
+<p>你也许还要问，master是什么？简单来说，master像一个指针，它总是指向一个branch（分支）的末尾，这个分支就名为master分支（或者叫main分支）。</p>
+<p>那么head呢？它也像一个指针，指向一个branch或直接指向一个commit，它默认指向master branch。</p>
+<p>让我们创建一个分支来解释这一切吧！</p>
+<p>还记得先前提到的hash值吗？首先执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout 复制你的第一次commit的hash值到此
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你会得到如下的段落，不要害怕，让我告诉你发生了什么</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Note: switching to <span class="s1">&#39;f58fa267f22a423518&#39;</span>.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">You are in <span class="s1">&#39;detached HEAD&#39;</span> state. You can look around, make experimental
+</span></span><span class="line"><span class="cl">changes and commit them, and you can discard any commits you make in this
+</span></span><span class="line"><span class="cl">state without impacting any branches by switching back to a branch.
+</span></span><span class="line"><span class="cl">略略略
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在执行了checkout命令后，Head脱离master，直接指向了命令中指定的hash值对应的commit，即：</p>
+<pre><code> commit-0 &lt;- commit-1               
+   ^           ^
+   |           |
+  Head       master
+</code></pre>
+<p>这样我们就来到了commit-0(first commit)。</p>
+<p>Head此时指向commit-0，如果你继续提交新的commit,Head会接着指向新的commit，这个新的commit接在commit-0之后，也就是一个新的分支，但由于你没有给这个分支命名（没有指定一个标记了这个分支的指针），当你再一次使用checkout命令使Head去到另一个commit上时，git就会丢失你新提交的全部commit。这就是所谓的detached HEAD。</p>
+<p>还记得吗？first commit中，我们在demo1.txt中写入了how r u（“怎么是你”）并提交，demo2.txt没有文字；second commit中，我们在demo1.txt中写入how old r u(“怎么老是你”)，demo2.txt也没有做任何回应，肯定是be了。呜呜呜，让我们从现在所处的commit 0开始，创建一个有he的分支吧Q_Q</p>
+<p>执行！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git branch he 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>创建了一个由he指向的新分支，即：</p>
+<pre><code>commit-0 &lt;- commit-1
+ ^  ^          ^
+ |  |          |
+ he Head      master
+</code></pre>
+<p>记得上文所说的吗，如果你没有给新的分支命名，你在Head基础上提交的全部commit都会最终丢失，不仅如此，现在你为新分支指定了一个he指针，你就应该使Head指向he指针，通过he指针操纵新分支。也就是说，Head被设计为用来在各个commit间跳转，如果要构建分支，请使Head属于分支指针。你也许注意到了，之前的log输出中，有Head-&gt;master的字样。</p>
+<p>所以接着执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git checkout he
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>即：</p>
+<pre><code>commit-0 &lt;- commit-1
+    ^          ^
+    |          |
+</code></pre>
+<p>Head -&gt; he       master</p>
+<p>如果你不执行这条命令，会导致he不被你操作，留在原地，这样新的commit仍然不属于任何分支。</p>
+<p>打开demo2.txt，写入 im fine how r u</p>
+<p>执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;he0&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>git add . 命令中的点注意用英文标点，点表示该目录下的全部文件</p>
+<p>把第三次commit记作commit-2，图示有：</p>
+<pre><code>commit-0 &lt;- commit-1
+   ^           ^
+   |           |
+commit-2     master
+ ^    
+ |    
+ he &lt;- Head
+</code></pre>
+<p>接着打开两个文档，写入 ^-^ 并保存，再执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;he1&#34;</span>
+</span></span><span class="line"><span class="cl">git log
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>把第4次提交记作commit-3，有图示：</p>
+<pre><code>commit-0 &lt;- commit-1
+   ^           ^
+   |           |
+commit-2(he0) master
+   ^
+   |
+commit-3(he1)
+ ^    
+ |    
+ he &lt;- Head 
+</code></pre>
+<p>好了，现在你可以使用git checkout 哈希值 在同一个分支上跳转了，如果你想要跳转到主分支，那就输入git checkout master即可。</p>
+<p>你可能会发现，在跳转于各个commit途中，demo2.txt文档消失了，那是因为在master分支上，我们至始至终没有add过demo2.txt到git的管理范围，所以你跳转的这些快照中不存在demo2.txt。你可以通过在最开始执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;为工作区初始状态构建一个快照&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>来构建一个你可以返回的初始状态。</p>
+<p>也许你并没有完全理解其中的逻辑，但是也不妨碍你进行接下来的实验，别灰心！</p>
+<h2 id="github">Github
+</h2>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/introduction/">
+        
+        
+            <div class="article-image">
+                <img src="/p/introduction/Introduction_cover.89128baea7e0fa93f80dc734e1a52756_hu_703002c8c51361b2.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post INTRODUCTION"
+                        
+                        data-hash="md5-iRKLrqfg&#43;pP4Dcc04aUnVg==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">INTRODUCTION</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 JCXJG IT-ASSOCIATION
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.33.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

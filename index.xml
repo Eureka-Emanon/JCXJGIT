@@ -7,13 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>JCXJG IT-ASSOCIATION</copyright>
-        <lastBuildDate>Wed, 07 Jan 2026 16:08:34 +0800</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 08 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.jcxjgit.dpdns.org/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>网站施工中</title>
         <link>https://www.jcxjgit.dpdns.org/p/%E7%BD%91%E7%AB%99%E6%96%BD%E5%B7%A5%E4%B8%AD/</link>
         <pubDate>Mon, 05 Jan 2026 22:19:13 +0800</pubDate>
         
         <guid>https://www.jcxjgit.dpdns.org/p/%E7%BD%91%E7%AB%99%E6%96%BD%E5%B7%A5%E4%B8%AD/</guid>
         <description>&lt;img src="https://www.jcxjgit.dpdns.org/p/%E7%BD%91%E7%AB%99%E6%96%BD%E5%B7%A5%E4%B8%AD/building.png" alt="Featured image of post 网站施工中" /&gt;</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://www.jcxjgit.dpdns.org/guestbook/comments/test4/</link>
+        <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jcxjgit.dpdns.org/guestbook/comments/test4/</guid>
+        <description></description>
         </item>
         <item>
         <title>Git_Github</title>
@@ -23,7 +31,7 @@
         <guid>https://www.jcxjgit.dpdns.org/p/git_github/</guid>
         <description>&lt;img src="https://www.jcxjgit.dpdns.org/p/git_github/cover.jpg" alt="Featured image of post Git_Github" /&gt;&lt;!-- 从这里开始撰写你的正文 --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;参与本文末尾的简单实验，留下你想说的话。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;参与后文&lt;em&gt;Github&lt;/em&gt;段落提供的简单实验，留下你想说的话。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;前言&#34;&gt;前言
 &lt;/h1&gt;&lt;ul&gt;
@@ -398,7 +406,69 @@ commit-3(he1)
 &lt;/div&gt;&lt;p&gt;来构建一个你可以返回的初始状态。&lt;/p&gt;
 &lt;p&gt;也许你并没有完全理解其中的逻辑，但是也不妨碍你进行接下来的实验，别灰心！&lt;/p&gt;
 &lt;h2 id=&#34;github&#34;&gt;Github
-&lt;/h2&gt;</description>
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;跟随以下的实验流程，在留言板上留言。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;首先确保你安装了git，登录了github账号&lt;/p&gt;
+&lt;p&gt;点击这个链接访问实验用的Github仓库(&lt;a class=&#34;link&#34; href=&#34;https://github.com/Eureka-Emanon/Guestbook&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/Eureka-Emanon/Guestbook&lt;/a&gt;)，如果你无法直连，也不知道如何找代理，你可以使用edge浏览器访问此链接&lt;a class=&#34;link&#34; href=&#34;https://microsoftedge.microsoft.com/addons/detail/ilink%E7%BD%91%E7%BB%9C%E5%8A%A0%E9%80%9F%E5%99%A8%E5%85%8D%E8%B4%B9vpn-%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86-cha/ekkkldemlhnacnfegdihallelglbnhnl&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ilink&lt;/a&gt;并获取ilink一个可以免费代理Github的浏览器扩展，获取后点击并启用，再尝试访问Github仓库。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/git_github/ilink.jpg&#34;
+	width=&#34;1197&#34;
+	height=&#34;385&#34;
+	srcset=&#34;https://www.jcxjgit.dpdns.org/p/git_github/ilink_hu_67dac9ba7e338886.jpg 480w, https://www.jcxjgit.dpdns.org/p/git_github/ilink_hu_cbb7ea8541893be1.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;在这里启用扩展&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;310&#34;
+		data-flex-basis=&#34;746px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;顺利访问我的Github仓库后，点击fork，这会将我仓库里的内容拷贝一份到你自己的仓库&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/git_github/fork.jpg&#34;
+	width=&#34;2489&#34;
+	height=&#34;1191&#34;
+	srcset=&#34;https://www.jcxjgit.dpdns.org/p/git_github/fork_hu_73b470d9ce1ea1f0.jpg 480w, https://www.jcxjgit.dpdns.org/p/git_github/fork_hu_ae925e058c40e7f5.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;fork&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;208&#34;
+		data-flex-basis=&#34;501px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;点击fork后，不要更改仓库名，“fork the main branch only”默认勾选，点击Create fork，你的用户下就多了一个同名仓库。&lt;/p&gt;
+&lt;p&gt;在你的电脑上创建一个本地文件夹，取名为Guestbook，在该目录下打开cmd&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/git_github/Guestbook.jpg&#34;
+	width=&#34;1630&#34;
+	height=&#34;432&#34;
+	srcset=&#34;https://www.jcxjgit.dpdns.org/p/git_github/Guestbook_hu_4f186188cd7b8c2b.jpg 480w, https://www.jcxjgit.dpdns.org/p/git_github/Guestbook_hu_55ddf12ba5e03246.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Guestbook&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;377&#34;
+		data-flex-basis=&#34;905px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;cmd输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/你的用户名/Guestbook
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这条命令从Github上将你的Guestbook仓库克隆到本地，现在你的文件夹里应该有数据了&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>INTRODUCTION</title>
@@ -430,6 +500,14 @@ commit-3(he1)
 &lt;h3 id=&#34;总结&#34;&gt;总结
 &lt;/h3&gt;&lt;p&gt;如果你想部署一个自己的网页，那么你只需要参考第一个视频即可。后面的只是我的碎碎念，这篇文章实际并没有参考价值，只是我的又一次失败。无妨，先推送上去试试水。&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>留言板</title>
+        <link>https://www.jcxjgit.dpdns.org/%E7%95%99%E8%A8%80%E6%9D%BF/</link>
+        <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jcxjgit.dpdns.org/%E7%95%99%E8%A8%80%E6%9D%BF/</guid>
+        <description>&lt;!-- 这个页面没有内容，全部由模板生成 --&gt;</description>
         </item>
         <item>
         <title>Chinese Test</title>
@@ -528,6 +606,30 @@ commit-3(he1)
         <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
         
         <guid>https://www.jcxjgit.dpdns.org/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://www.jcxjgit.dpdns.org/guestbook/comments/test/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jcxjgit.dpdns.org/guestbook/comments/test/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://www.jcxjgit.dpdns.org/guestbook/comments/test2/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jcxjgit.dpdns.org/guestbook/comments/test2/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://www.jcxjgit.dpdns.org/guestbook/comments/test3/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://www.jcxjgit.dpdns.org/guestbook/comments/test3/</guid>
         <description></description>
         </item>
         <item>

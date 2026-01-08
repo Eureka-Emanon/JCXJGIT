@@ -39,10 +39,11 @@
 &lt;h1 id=&#34;安装git注册github账号&#34;&gt;安装Git，注册Github账号
 &lt;/h1&gt;&lt;p&gt;请参考这个视频：&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Hkr7YYEh8/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2ea1d9de6153aae330a32af9e11be389&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;给傻子的github教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;由于你聪明的并不是傻子，所以你不需要看完整个个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。&lt;/p&gt;
-&lt;p&gt;如果你只想参与到留言中，你可以跳过 Git 段落，直接阅读 Github 段落。&lt;/p&gt;
+&lt;p&gt;由于你聪明的并不是傻子，所以你不需要看完整个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。&lt;/p&gt;
 &lt;h2 id=&#34;git&#34;&gt;Git
-&lt;/h2&gt;&lt;p&gt;这个版块将为你简单介绍git的工作原理。&lt;/p&gt;
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;如果你只想参与到留言中，你可以跳过 Git 段落，直接阅读 Github 段落。这个版块将为你简单介绍git的工作原理。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;请你创建一个新的文件目录命名为GTest,并在该路径下打开cmd（以防你不知道，直接点击下图箭头指向的位置输入cmd即可）。输入下面的命令：&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/git_github/0.png&#34;
 	width=&#34;1863&#34;
@@ -330,11 +331,11 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;即：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;commit-0 &amp;lt;- commit-1
-    ^          ^
-    |          |
+ ^              ^
+ |              |
+ he &amp;lt;- Head   master
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Head -&amp;gt; he       master&lt;/p&gt;
-&lt;p&gt;如果你不执行这条命令，会导致he不被你操作，留在原地，这样新的commit仍然不属于任何分支。&lt;/p&gt;
+&lt;p&gt;如果你不执行这条命令，会导致he不被你操作，留在原地，这样新的commit仍然不属于he分支。&lt;/p&gt;
 &lt;p&gt;打开demo2.txt，写入 im fine how r u&lt;/p&gt;
 &lt;p&gt;执行&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

@@ -352,10 +352,11 @@
 <h1 id="安装git注册github账号">安装Git，注册Github账号
 </h1><p>请参考这个视频：<a class="link" href="https://www.bilibili.com/video/BV1Hkr7YYEh8/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2ea1d9de6153aae330a32af9e11be389"  target="_blank" rel="noopener"
     >给傻子的github教程</a></p>
-<p>由于你聪明的并不是傻子，所以你不需要看完整个个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。</p>
-<p>如果你只想参与到留言中，你可以跳过 Git 段落，直接阅读 Github 段落。</p>
+<p>由于你聪明的并不是傻子，所以你不需要看完整个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。</p>
 <h2 id="git">Git
-</h2><p>这个版块将为你简单介绍git的工作原理。</p>
+</h2><blockquote>
+<p>如果你只想参与到留言中，你可以跳过 Git 段落，直接阅读 Github 段落。这个版块将为你简单介绍git的工作原理。</p>
+</blockquote>
 <p>请你创建一个新的文件目录命名为GTest,并在该路径下打开cmd（以防你不知道，直接点击下图箭头指向的位置输入cmd即可）。输入下面的命令：</p>
 <p><img src="/p/git_github/0.png"
 	width="1863"
@@ -643,11 +644,11 @@
 </div>
 </div><p>即：</p>
 <pre><code>commit-0 &lt;- commit-1
-    ^          ^
-    |          |
+ ^              ^
+ |              |
+ he &lt;- Head   master
 </code></pre>
-<p>Head -&gt; he       master</p>
-<p>如果你不执行这条命令，会导致he不被你操作，留在原地，这样新的commit仍然不属于任何分支。</p>
+<p>如果你不执行这条命令，会导致he不被你操作，留在原地，这样新的commit仍然不属于he分支。</p>
 <p>打开demo2.txt，写入 im fine how r u</p>
 <p>执行</p>
 <div class="highlight"><div class="chroma">

@@ -221,12 +221,37 @@
     <title>留言板</title>
     <link rel="stylesheet" href="/css/style.css">
     <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --card-border: #333;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --time-color: #666;
+            --link-color: #0066cc;
+            --menu-text: #333;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #121212;
+                --text-color: #e0e0e0;
+                --card-bg: #1e1e1e;
+                --card-border: #444;
+                --shadow-color: rgba(0, 0, 0, 0.4);
+                --time-color: #aaa;
+                --link-color: #4dabf7;
+                --menu-text: #e0e0e0;
+            }
+        }
+
         body {
             font-family: 'Courier New', Courier, monospace;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             padding: 20px;
             line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         h1 {
@@ -235,26 +260,55 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
             margin-bottom: 20px;
+            color: var(--text-color);
         }
 
         .comment-card {
-            background-color: #ffffff;
-            border: 2px solid #333;
+            background-color: var(--card-bg);
+            border: 2px solid var(--card-border);
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 20px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 2px 2px 10px var(--shadow-color);
+            transition: all 0.3s ease;
         }
 
         .comment-card h3 {
             font-size: 1.5em;
             margin-bottom: 10px;
             font-style: italic;
+            color: var(--text-color);
+        }
+
+        .comment-card p {
+            color: var(--text-color);
+            opacity: 0.9;
         }
 
         .comment-card time {
             font-size: 0.9em;
-            color: #666;
+            color: var(--time-color);
+        }
+
+        a {
+            color: var(--link-color);
+        }
+
+         
+        nav, .menu, .navbar, header {
+            color: var(--menu-text) !important;
+        }
+
+         
+        p, span, div, li, td, th, label, input, textarea, select, button {
+            color: var(--text-color);
+        }
+
+         
+        button, input[type="button"], input[type="submit"] {
+            background-color: var(--card-bg);
+            border-color: var(--card-border);
+            color: var(--text-color);
         }
 
         @media (max-width: 600px) {

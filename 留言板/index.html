@@ -233,14 +233,12 @@
 
             <main class="main full-width">
 
-
 <div id="vapor-app" class="vapor-container">
     
     
     <div class="vapor-title-bar">
         <div class="title-text">
             <span class="icon">💾</span>
-            
             <span class="glitch-text" data-text="留言板">ＧＵＥＳＴＢＯＯＫ.ｅｘｅ</span>
         </div>
         <div class="window-controls">
@@ -264,13 +262,12 @@
         
         <div class="retro-sun"></div>
         <div class="perspective-grid"></div>
-        
         <div class="vhs-overlay"></div>
 
         
+        
         <div class="vapor-status-bar">
             <span>STATUS: <span style="color: #00ff00;">ONLINE</span></span>
-            
             <span style="flex-grow:1; text-align:center;">留言数：2</span>
             <span>1995-2077</span>
         </div>
@@ -278,7 +275,11 @@
         
             
             
-            <div class="vapor-scroll-content" style="animation-duration: 14s;">
+            
+            
+            <div class="vapor-scroll-content" style="animation-duration: 10s;">
+                
+                
                 
                 
                 <div class="vapor-card">
@@ -288,7 +289,6 @@
                     </div>
                     <h3 class="card-msg">今日复何日，今夕复何夕</h3>
                     <div class="card-user">
-                        
                         <span class="user-name">IT-Association</span>
                     </div>
                 </div>
@@ -300,7 +300,6 @@
                     </div>
                     <h3 class="card-msg">你好吗？我很好。</h3>
                     <div class="card-user">
-                        
                         <span class="user-name">《情书》</span>
                     </div>
                 </div>
@@ -315,7 +314,6 @@
                     </div>
                     <h3 class="card-msg">今日复何日，今夕复何夕</h3>
                     <div class="card-user">
-                        
                         <span class="user-name">IT-Association</span>
                     </div>
                 </div>
@@ -327,7 +325,6 @@
                     </div>
                     <h3 class="card-msg">你好吗？我很好。</h3>
                     <div class="card-user">
-                        
                         <span class="user-name">《情书》</span>
                     </div>
                 </div>
@@ -338,29 +335,23 @@
 </div>
 
 <style>
-     
-
-     
     @import url('https://fonts.googleapis.com/css2?family=VT323&family=Noto+Serif+SC:wght@700&display=swap');
 
     .vapor-container {
-         
         --vp-pink: #ff71ce;
         --vp-cyan: #01cdfe;
         --vp-purple: #b967ff;
         --vp-yellow: #fffb96;
-        --vp-bg: #2b213a;           
-        --vp-win-bg: #c0c0c0;       
+        --vp-bg: #2b213a;
+        --vp-win-bg: #c0c0c0;
         --vp-win-border-light: #fff;
         --vp-win-border-dark: #808080;
         
-         
-        font-family: 'Noto Serif SC', 'SimSun', 'Songti SC', 'Times New Roman', serif;
+        font-family: 'Noto Serif SC', 'SimSun', serif;
         width: 100%;
         max-width: 100%;
         margin: 20px auto;
         background-color: var(--vp-win-bg);
-         
         border-top: 2px solid var(--vp-win-border-light);
         border-left: 2px solid var(--vp-win-border-light);
         border-right: 2px solid var(--vp-win-border-dark);
@@ -371,11 +362,8 @@
         overflow: hidden;
     }
 
-     
     @media (prefers-color-scheme: dark) {
-        .vapor-container {
-            --vp-win-bg: #a0a0a0; 
-        }
+        .vapor-container { --vp-win-bg: #a0a0a0; }
     }
 
      
@@ -387,49 +375,24 @@
         align-items: center;
         border-bottom: 2px solid var(--vp-win-border-dark);
     }
-
     .title-text {
-        color: white;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-family: 'Courier New', monospace;
-        letter-spacing: 2px;
+        color: white; font-weight: bold; display: flex; align-items: center; gap: 5px;
+        font-family: 'Courier New', monospace; letter-spacing: 2px;
         text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
     }
-
-    .window-controls {
-        display: flex;
-        gap: 2px;
-    }
-
+    .window-controls { display: flex; gap: 2px; }
     .window-controls button {
-        width: 20px; height: 20px;
-        background: var(--vp-win-bg);
-        border-top: 1px solid var(--vp-win-border-light);
-        border-left: 1px solid var(--vp-win-border-light);
-        border-right: 1px solid var(--vp-win-border-dark);
-        border-bottom: 1px solid var(--vp-win-border-dark);
-        font-size: 12px;
-        line-height: 1;
-        font-weight: bold;
-        cursor: pointer;
-        padding: 0;
-        color: black;
+        width: 20px; height: 20px; background: var(--vp-win-bg);
+        border-top: 1px solid var(--vp-win-border-light); border-left: 1px solid var(--vp-win-border-light);
+        border-right: 1px solid var(--vp-win-border-dark); border-bottom: 1px solid var(--vp-win-border-dark);
+        font-size: 12px; font-weight: bold; padding: 0; color: black;
     }
 
-     
     .vapor-menu-bar {
-        padding: 4px 10px;
-        display: flex;
-        gap: 15px;
-        font-size: 0.9em;
+        padding: 4px 10px; display: flex; gap: 15px; font-size: 0.9em;
         border-bottom: 2px solid var(--vp-win-border-dark);
-        background: var(--vp-win-bg);
-        color: black;
+        background: var(--vp-win-bg); color: black;
     }
-    .vapor-menu-bar u { text-decoration: underline; }
     .music-stat { margin-left: auto; opacity: 0.6; font-family: monospace; }
 
      
@@ -441,102 +404,28 @@
         border: 2px solid var(--vp-win-border-dark);
         margin: 5px;
         box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
+        
+         
+        padding-top: 60px; 
+        box-sizing: border-box; 
     }
 
-     
-    .vapor-status-bar {
-        position: absolute;
-        top: 0; left: 0; right: 0;
-        background: rgba(0,0,0,0.5);
-        color: var(--vp-cyan);
-        padding: 5px 10px;
-        font-family: 'VT323', monospace;  
-        font-size: 1.2em;
-        z-index: 20;
-        display: flex;
-        border-bottom: 1px solid var(--vp-cyan);
-        backdrop-filter: blur(2px);
-    }
-
-     
-    .perspective-grid {
-        position: absolute;
-        bottom: 0; left: 0; width: 100%; height: 50%;
-        background-image: 
-            linear-gradient(var(--vp-cyan) 1px, transparent 1px),
-            linear-gradient(90deg, var(--vp-cyan) 1px, transparent 1px);
-        background-size: 40px 40px;
-        transform: perspective(300px) rotateX(60deg) translateY(100px) scale(2);
-        opacity: 0.3;
-        pointer-events: none;
-        animation: grid-move 20s linear infinite;
-    }
-    
-    @keyframes grid-move {
-        0% { background-position: 0 0; }
-        100% { background-position: 0 40px; }
-    }
-
-     
-    .retro-sun {
-        position: absolute;
-        bottom: 30%; left: 50%;
-        transform: translateX(-50%);
-        width: 150px; height: 150px;
-        background: linear-gradient(to bottom, var(--vp-yellow), var(--vp-pink));
-        border-radius: 50%;
-        box-shadow: 0 0 20px var(--vp-pink);
-        z-index: 1;
-        mask-image: linear-gradient(to bottom, 
-            black 0%, black 50%, 
-            transparent 50%, transparent 55%, 
-            black 55%, black 65%, 
-            transparent 65%, transparent 70%, 
-            black 70%, black 80%, 
-            transparent 80%, transparent 85%, 
-            black 85%
-        );
-        -webkit-mask-image: linear-gradient(to bottom, 
-            black 0%, black 50%, 
-            transparent 50%, transparent 55%, 
-            black 55%, black 65%, 
-            transparent 65%, transparent 70%, 
-            black 70%, black 80%, 
-            transparent 80%, transparent 85%, 
-            black 85%
-        );
-        opacity: 0.8;
-    }
-
-     
-    .vhs-overlay {
-        position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        background: repeating-linear-gradient(
-            to bottom,
-            transparent,
-            transparent 2px,
-            rgba(0,0,0,0.1) 3px
-        );
-        pointer-events: none;
-        z-index: 30;
-        opacity: 0.4;
-    }
-
-     
     .vapor-scroll-content {
-        padding-top: 60px;
+         
         position: relative;
         z-index: 10;
         animation: scroll-vertical linear infinite;
+         
     }
 
+     
     .vapor-viewport:hover .vapor-scroll-content {
         animation-play-state: paused;
     }
 
     @keyframes scroll-vertical {
         0% { transform: translateY(0); }
+         
         100% { transform: translateY(-50%); }
     }
 
@@ -548,11 +437,14 @@
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
         width: 85%;
-        margin: 0 auto 30px auto;
         padding: 15px;
         color: #fff !important;
         box-shadow: 5px 5px 0 rgba(1, 205, 254, 0.3);
         transition: transform 0.2s;
+        
+         
+        margin: 0 auto 30px auto; 
+         
     }
 
     .vapor-card:hover {
@@ -561,46 +453,61 @@
         border-left-color: var(--vp-cyan);
     }
 
+     
+    .vapor-status-bar {
+        position: absolute; top: 0; left: 0; right: 0;
+        background: rgba(0,0,0,0.5); color: var(--vp-cyan);
+        padding: 5px 10px; font-family: 'VT323', monospace; font-size: 1.2em;
+        z-index: 20; display: flex; border-bottom: 1px solid var(--vp-cyan);
+        backdrop-filter: blur(2px); height: 30px;  
+    }
+
+    .perspective-grid {
+        position: absolute; bottom: 0; left: 0; width: 100%; height: 50%;
+        background-image: linear-gradient(var(--vp-cyan) 1px, transparent 1px),
+                          linear-gradient(90deg, var(--vp-cyan) 1px, transparent 1px);
+        background-size: 40px 40px;
+        transform: perspective(300px) rotateX(60deg) translateY(100px) scale(2);
+        opacity: 0.3; pointer-events: none; animation: grid-move 20s linear infinite;
+    }
+    @keyframes grid-move { 0% { background-position: 0 0; } 100% { background-position: 0 40px; } }
+
+    .retro-sun {
+        position: absolute; bottom: 30%; left: 50%; transform: translateX(-50%);
+        width: 150px; height: 150px;
+        background: linear-gradient(to bottom, var(--vp-yellow), var(--vp-pink));
+        border-radius: 50%; box-shadow: 0 0 20px var(--vp-pink); z-index: 1;
+        mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 50%, transparent 55%, black 55%, black 65%, transparent 65%, transparent 70%, black 70%, black 80%, transparent 80%, transparent 85%, black 85%);
+        -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 50%, transparent 55%, black 55%, black 65%, transparent 65%, transparent 70%, black 70%, black 80%, transparent 80%, transparent 85%, black 85%);
+        opacity: 0.8;
+    }
+
+    .vhs-overlay {
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background: repeating-linear-gradient(to bottom, transparent, transparent 2px, rgba(0,0,0,0.1) 3px);
+        pointer-events: none; z-index: 30; opacity: 0.4;
+    }
+
     .card-header-line {
-        display: flex;
-        justify-content: space-between;
-        font-family: 'VT323', monospace;
-        font-size: 1.1em;
-        color: var(--vp-yellow) !important;
-        margin-bottom: 5px;
-        text-shadow: 1px 1px 0 #000;
+        display: flex; justify-content: space-between;
+        font-family: 'VT323', monospace; font-size: 1.1em;
+        color: var(--vp-yellow) !important; margin-bottom: 5px; text-shadow: 1px 1px 0 #000;
     }
-
     .card-msg {
-         
-        font-family: 'Noto Serif SC', 'SimSun', serif;
-        font-size: 1.4em;
-        margin: 10px 0;
-        font-style: italic;
-        color: #fff !important;
-        text-shadow: 2px 2px 0 var(--vp-purple);
-        letter-spacing: 1px;
+        font-family: 'Noto Serif SC', 'SimSun', serif; font-size: 1.4em;
+        margin: 10px 0; font-style: italic; color: #fff !important;
+        text-shadow: 2px 2px 0 var(--vp-purple); letter-spacing: 1px;
     }
-
     .card-user {
-        text-align: right;
-        font-size: 0.9em;
+        text-align: right; font-size: 0.9em;
     }
-
     .user-name {
-        font-weight: bold;
-        text-transform: uppercase;
-        color: var(--vp-pink) !important;
-        text-shadow: 1px 1px 0 #000;
-        font-family: 'Courier New', monospace;  
+        font-weight: bold; text-transform: uppercase; color: var(--vp-pink) !important;
+        text-shadow: 1px 1px 0 #000; font-family: 'Courier New', monospace;
     }
-
     .vapor-empty {
-        text-align: center;
-        padding-top: 100px;
-        font-size: 2em;
-        color: var(--vp-pink) !important;
-        text-shadow: 2px 2px 0 var(--vp-cyan);
+        text-align: center; padding-top: 100px; font-size: 2em;
+        color: var(--vp-pink) !important; text-shadow: 2px 2px 0 var(--vp-cyan);
         font-family: 'Times New Roman', serif;
     }
     
@@ -609,7 +516,6 @@
         .vapor-card { width: 90%; }
         .retro-sun { width: 100px; height: 100px; }
     }
-
 </style>
 
             </main>

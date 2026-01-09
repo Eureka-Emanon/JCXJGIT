@@ -15,7 +15,9 @@
         <guid>https://www.jcxjgit.dpdns.org/p/git_github/</guid>
         <description>&lt;img src="https://www.jcxjgit.dpdns.org/p/git_github/cover.jpg" alt="Featured image of post Git_Github" /&gt;&lt;!-- 从这里开始撰写你的正文 --&gt;
 &lt;blockquote&gt;
-&lt;p&gt;参与后文&lt;em&gt;Github&lt;/em&gt;段落提供的简单实验，留下你想说的话。&lt;/p&gt;
+&lt;p&gt;参与后文&lt;em&gt;Github&lt;/em&gt;段落提供的简单实验，留下你想说的话。
+如果你无法完成饰演，我们也欢迎你直接联系技术部部长，我们热切的希望你可以在网站上留下足迹。
+这是他的qq: 2738375716&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;前言&#34;&gt;前言
 &lt;/h1&gt;&lt;ul&gt;
@@ -31,7 +33,7 @@
 &lt;h1 id=&#34;安装git注册github账号&#34;&gt;安装Git，注册Github账号
 &lt;/h1&gt;&lt;p&gt;请参考这个视频：&lt;a class=&#34;link&#34; href=&#34;https://www.bilibili.com/video/BV1Hkr7YYEh8/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=2ea1d9de6153aae330a32af9e11be389&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;给傻子的github教程&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;由于你聪明的并不是傻子，所以你不需要看完整个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。&lt;/p&gt;
+&lt;p&gt;由于你聪明的并不是傻子，所以你不需要看完整个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可，请认真对待你的Github用户名，后文会用到。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。&lt;/p&gt;
 &lt;h2 id=&#34;git&#34;&gt;Git
 &lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;如果你只想参与到留言中，你可以跳过 Git 段落，直接阅读 Github 段落。这个版块将为你简单介绍git的工作原理。&lt;/p&gt;
@@ -427,14 +429,14 @@ commit-3(he1)
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;点击fork后，不要更改仓库名，“fork the main branch only”默认勾选，点击Create fork，你的用户下就多了一个同名仓库。&lt;/p&gt;
-&lt;p&gt;在你的电脑上创建一个本地文件夹，取名为Guestbook，在该目录下打开cmd&lt;/p&gt;
+&lt;p&gt;在你的电脑上创建一个本地文件夹，取名为comments，在该目录下打开cmd(注意区分大小写)&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/git_github/Guestbook.jpg&#34;
 	width=&#34;1630&#34;
 	height=&#34;432&#34;
 	srcset=&#34;https://www.jcxjgit.dpdns.org/p/git_github/Guestbook_hu_4f186188cd7b8c2b.jpg 480w, https://www.jcxjgit.dpdns.org/p/git_github/Guestbook_hu_55ddf12ba5e03246.jpg 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;Guestbook&#34;
+		alt=&#34;guestbook&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
@@ -446,12 +448,110 @@ commit-3(he1)
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/你的用户名/Guestbook
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/你的Github用户名/guestbook.git
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; guestbook
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这条命令从Github上将你的Guestbook仓库克隆到本地，现在你的文件夹里应该有数据了&lt;/p&gt;
+&lt;/div&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/&lt;/a&gt;你的Github用户名/guestbook 这个网址就是你本地仓库的网址&lt;/p&gt;
+&lt;p&gt;第一条命令从Github上将你的guestbook仓库克隆到本地。&lt;/p&gt;
+&lt;p&gt;现在你的本地文件夹应该多了一个名为guestbook的文件夹，第二条命令就在cmd中进入文件夹。点开文件夹可以看到一些后缀为.md的文件，它们是远程的仓库里的内容。&lt;/p&gt;
+&lt;p&gt;不急着编辑，先执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git pull
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;现在，在guestbook文件夹中新建一个文本文档，将其重命名为&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;你的ID.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;希望你使用你的Github用户名作为你的ID。这是为了我们审核方便。&lt;/p&gt;
+&lt;p&gt;在该文档中写入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;name: 你的署名
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;message: 你的留言
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;你的署名可以自定义，它会显示在网页上。&lt;/p&gt;
+&lt;p&gt;注意：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;上下的三个减号不能缺少&lt;/li&gt;
+&lt;li&gt;冒号必须使用英文&lt;/li&gt;
+&lt;li&gt;冒号后面必须有空格&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;建议你直接复制模板过去修改以免出错。&lt;/p&gt;
+&lt;p&gt;示例如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jcxjgit.dpdns.org/p/git_github/comment.jpg&#34;
+	width=&#34;769&#34;
+	height=&#34;251&#34;
+	srcset=&#34;https://www.jcxjgit.dpdns.org/p/git_github/comment_hu_f8c24d3305c8380a.jpg 480w, https://www.jcxjgit.dpdns.org/p/git_github/comment_hu_3254e150f0091bdf.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;只是怕亲手将我的真心葬送&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;306&#34;
+		data-flex-basis=&#34;735px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最后执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;添加留言 by 你的Github用户名&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;最后&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;访问你的 GitHub 仓库：https://github.com/你的用户名/guestbook&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击 &amp;ldquo;Pull requests&amp;rdquo; 标签&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击 &amp;ldquo;New pull request&amp;rdquo; 按钮。
+什么都不用改，直接点击 &amp;ldquo;Create pull request&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;标题：写 &amp;ldquo;添加留言 by 你的用户名&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;描述：可以留空或简单描述&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击 &amp;ldquo;Create pull request&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;之后经过审核，你的留言就会被发布在网页上了。&lt;/p&gt;
 </description>
         </item>
         <item>

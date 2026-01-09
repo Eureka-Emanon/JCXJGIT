@@ -346,7 +346,9 @@
     
     <!-- 从这里开始撰写你的正文 -->
 <blockquote>
-<p>参与后文<em>Github</em>段落提供的简单实验，留下你想说的话。</p>
+<p>参与后文<em>Github</em>段落提供的简单实验，留下你想说的话。
+如果你无法完成饰演，我们也欢迎你直接联系技术部部长，我们热切的希望你可以在网站上留下足迹。
+这是他的qq: 2738375716</p>
 </blockquote>
 <h1 id="前言">前言
 </h1><ul>
@@ -362,7 +364,7 @@
 <h1 id="安装git注册github账号">安装Git，注册Github账号
 </h1><p>请参考这个视频：<a class="link" href="https://www.bilibili.com/video/BV1Hkr7YYEh8/?spm_id_from=333.337.search-card.all.click&amp;vd_source=2ea1d9de6153aae330a32af9e11be389"  target="_blank" rel="noopener"
     >给傻子的github教程</a></p>
-<p>由于你聪明的并不是傻子，所以你不需要看完整个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。</p>
+<p>由于你聪明的并不是傻子，所以你不需要看完整个视频，只需要知道如何安装git并为git设置环境变量，接着用你的邮箱注册一个github账户即可，请认真对待你的Github用户名，后文会用到。如果你对如何在vscode代码编辑器中使用git感兴趣，你也可以把视频看完。</p>
 <h2 id="git">Git
 </h2><blockquote>
 <p>如果你只想参与到留言中，你可以跳过 Git 段落，直接阅读 Github 段落。这个版块将为你简单介绍git的工作原理。</p>
@@ -758,14 +760,14 @@ commit-3(he1)
 	
 ></p>
 <p>点击fork后，不要更改仓库名，“fork the main branch only”默认勾选，点击Create fork，你的用户下就多了一个同名仓库。</p>
-<p>在你的电脑上创建一个本地文件夹，取名为Guestbook，在该目录下打开cmd</p>
+<p>在你的电脑上创建一个本地文件夹，取名为comments，在该目录下打开cmd(注意区分大小写)</p>
 <p><img src="/p/git_github/Guestbook.jpg"
 	width="1630"
 	height="432"
 	srcset="/p/git_github/Guestbook_hu_4f186188cd7b8c2b.jpg 480w, /p/git_github/Guestbook_hu_55ddf12ba5e03246.jpg 1024w"
 	loading="lazy"
 	
-		alt="Guestbook"
+		alt="guestbook"
 	
 	
 		class="gallery-image" 
@@ -777,12 +779,110 @@ commit-3(he1)
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/你的用户名/Guestbook
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/你的Github用户名/guestbook.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> guestbook
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>这条命令从Github上将你的Guestbook仓库克隆到本地，现在你的文件夹里应该有数据了</p>
+</div><p><a class="link" href="https://github.com/"  target="_blank" rel="noopener"
+    >https://github.com/</a>你的Github用户名/guestbook 这个网址就是你本地仓库的网址</p>
+<p>第一条命令从Github上将你的guestbook仓库克隆到本地。</p>
+<p>现在你的本地文件夹应该多了一个名为guestbook的文件夹，第二条命令就在cmd中进入文件夹。点开文件夹可以看到一些后缀为.md的文件，它们是远程的仓库里的内容。</p>
+<p>不急着编辑，先执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git pull
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>现在，在guestbook文件夹中新建一个文本文档，将其重命名为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">你的ID.md
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>希望你使用你的Github用户名作为你的ID。这是为了我们审核方便。</p>
+<p>在该文档中写入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">name: 你的署名
+</span></span><span class="line"><span class="cl">message: 你的留言
+</span></span><span class="line"><span class="cl">---
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你的署名可以自定义，它会显示在网页上。</p>
+<p>注意：</p>
+<ol>
+<li>上下的三个减号不能缺少</li>
+<li>冒号必须使用英文</li>
+<li>冒号后面必须有空格</li>
+</ol>
+<p>建议你直接复制模板过去修改以免出错。</p>
+<p>示例如下：</p>
+<p><img src="/p/git_github/comment.jpg"
+	width="769"
+	height="251"
+	srcset="/p/git_github/comment_hu_f8c24d3305c8380a.jpg 480w, /p/git_github/comment_hu_3254e150f0091bdf.jpg 1024w"
+	loading="lazy"
+	
+		alt="只是怕亲手将我的真心葬送"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="306"
+		data-flex-basis="735px"
+	
+></p>
+<p>最后执行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;添加留言 by 你的Github用户名&#34;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最后</p>
+<ol>
+<li>
+<p>访问你的 GitHub 仓库：https://github.com/你的用户名/guestbook</p>
+</li>
+<li>
+<p>点击 &ldquo;Pull requests&rdquo; 标签</p>
+</li>
+<li>
+<p>点击 &ldquo;New pull request&rdquo; 按钮。
+什么都不用改，直接点击 &ldquo;Create pull request&rdquo;</p>
+</li>
+<li>
+<p>标题：写 &ldquo;添加留言 by 你的用户名&rdquo;</p>
+</li>
+<li>
+<p>描述：可以留空或简单描述</p>
+</li>
+<li>
+<p>点击 &ldquo;Create pull request&rdquo;</p>
+</li>
+</ol>
+<p>之后经过审核，你的留言就会被发布在网页上了。</p>
 
 </section>
 

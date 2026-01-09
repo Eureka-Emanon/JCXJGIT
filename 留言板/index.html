@@ -232,150 +232,385 @@
 </aside>
 
             <main class="main full-width">
-<!DOCTYPE html>
-<html lang="zh-CN">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>留言板</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <style>
-        :root {
-            --bg-color: #f4f4f4;
-            --text-color: #333;
-            --card-bg: #ffffff;
-            --card-border: #333;
-            --shadow-color: rgba(0, 0, 0, 0.2);
-            --time-color: #666;
-            --link-color: #0066cc;
-            --menu-text: #333;
-        }
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                 
-                --bg-color: #2a2d3e;           
-                --text-color: #e6e6e6;         
-                --card-bg: #3a3f5a;            
-                --card-border: #4a5070;        
-                --shadow-color: rgba(0, 0, 0, 0.25);
-                --time-color: #b0b5c9;         
-                --link-color: #6ab0de;         
-                --menu-text: #e6e6e6;
-            }
-        }
-
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            padding: 20px;
-            line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        h1 {
-            font-size: 2.5em;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 20px;
-            color: var(--text-color);
-        }
-
-        .comment-card {
-            background-color: var(--card-bg);
-            border: 2px solid var(--card-border);
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            box-shadow: 2px 2px 10px var(--shadow-color);
-            transition: all 0.3s ease;
-        }
-
-        .comment-card h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            font-style: italic;
-            color: var(--text-color);
-        }
-
-        .comment-card p {
-            color: var(--text-color);
-            opacity: 0.9;
-        }
-
-        .comment-card time {
-            font-size: 0.9em;
-            color: var(--time-color);
-        }
-
-        a {
-            color: var(--link-color);
-        }
-
-         
-        nav, .menu, .navbar, header {
-            color: var(--menu-text) !important;
-        }
-
-         
-        p, span, div, li, td, th, label, input, textarea, select, button {
-            color: var(--text-color);
-        }
-
-         
-        button, input[type="button"], input[type="submit"] {
-            background-color: var(--card-bg);
-            border-color: var(--card-border);
-            color: var(--text-color);
-        }
-
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            .comment-card {
-                padding: 10px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <h1>留言板</h1>
-
+<div id="vapor-app" class="vapor-container">
     
     
-        <p>共 2 条留言</p>
-        
-        <div class="comment-card">
+    <div class="vapor-title-bar">
+        <div class="title-text">
+            <span class="icon">💾</span>
             
-            <h3>今日复何日，今夕复何夕</h3>
-            
-            <p>IT-Association</p>
-            <time>2026-01-09</time>
+            <span class="glitch-text" data-text="留言板">ＧＵＥＳＴＢＯＯＫ.ｅｘｅ</span>
         </div>
-        
-        <div class="comment-card">
-            
-            <h3>你好吗？我很好。</h3>
-            
-            <p>《情书》</p>
-            <time>2026-01-09</time>
+        <div class="window-controls">
+            <button aria-label="Minimize">_</button>
+            <button aria-label="Maximize">□</button>
+            <button aria-label="Close" class="close-btn">×</button>
         </div>
-        
+    </div>
+
     
+    <div class="vapor-menu-bar">
+        <span><u>F</u>ile</span>
+        <span><u>E</u>dit</span>
+        <span><u>V</u>iew</span>
+        <span><u>H</u>elp</span>
+        <span class="music-stat">♫ ＭＵＳＩＣ：ＯＦＦ</span>
+    </div>
 
-</body>
+    
+    <div class="vapor-viewport">
+        
+        <div class="retro-sun"></div>
+        <div class="perspective-grid"></div>
+        
+        <div class="vhs-overlay"></div>
 
-</html>
+        
+        <div class="vapor-status-bar">
+            <span>STATUS: <span style="color: #00ff00;">ONLINE</span></span>
+            
+            <span style="flex-grow:1; text-align:center;">留言数：2</span>
+            <span>1995-2077</span>
+        </div>
+
+        
+            
+            
+            <div class="vapor-scroll-content" style="animation-duration: 14s;">
+                
+                
+                <div class="vapor-card">
+                    <div class="card-header-line">
+                        <span class="card-time">2026-01-09</span>
+                        <span class="card-id">ID: d218d3</span>
+                    </div>
+                    <h3 class="card-msg">今日复何日，今夕复何夕</h3>
+                    <div class="card-user">
+                        
+                        <span class="user-name">IT-Association</span>
+                    </div>
+                </div>
+                
+                <div class="vapor-card">
+                    <div class="card-header-line">
+                        <span class="card-time">2026-01-09</span>
+                        <span class="card-id">ID: 09c844</span>
+                    </div>
+                    <h3 class="card-msg">你好吗？我很好。</h3>
+                    <div class="card-user">
+                        
+                        <span class="user-name">《情书》</span>
+                    </div>
+                </div>
+                
+
+                
+                
+                <div class="vapor-card">
+                    <div class="card-header-line">
+                        <span class="card-time">2026-01-09</span>
+                        <span class="card-id">ID: d218d3</span>
+                    </div>
+                    <h3 class="card-msg">今日复何日，今夕复何夕</h3>
+                    <div class="card-user">
+                        
+                        <span class="user-name">IT-Association</span>
+                    </div>
+                </div>
+                
+                <div class="vapor-card">
+                    <div class="card-header-line">
+                        <span class="card-time">2026-01-09</span>
+                        <span class="card-id">ID: 09c844</span>
+                    </div>
+                    <h3 class="card-msg">你好吗？我很好。</h3>
+                    <div class="card-user">
+                        
+                        <span class="user-name">《情书》</span>
+                    </div>
+                </div>
+                
+            </div>
+        
+    </div>
+</div>
+
+<style>
+     
+
+     
+    @import url('https://fonts.googleapis.com/css2?family=VT323&family=Noto+Serif+SC:wght@700&display=swap');
+
+    .vapor-container {
+         
+        --vp-pink: #ff71ce;
+        --vp-cyan: #01cdfe;
+        --vp-purple: #b967ff;
+        --vp-yellow: #fffb96;
+        --vp-bg: #2b213a;           
+        --vp-win-bg: #c0c0c0;       
+        --vp-win-border-light: #fff;
+        --vp-win-border-dark: #808080;
+        
+         
+        font-family: 'Noto Serif SC', 'SimSun', 'Songti SC', 'Times New Roman', serif;
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+        background-color: var(--vp-win-bg);
+         
+        border-top: 2px solid var(--vp-win-border-light);
+        border-left: 2px solid var(--vp-win-border-light);
+        border-right: 2px solid var(--vp-win-border-dark);
+        border-bottom: 2px solid var(--vp-win-border-dark);
+        box-shadow: 10px 10px 0 rgba(0,0,0,0.3);
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+
+     
+    @media (prefers-color-scheme: dark) {
+        .vapor-container {
+            --vp-win-bg: #a0a0a0; 
+        }
+    }
+
+     
+    .vapor-title-bar {
+        background: linear-gradient(90deg, var(--vp-purple), var(--vp-cyan));
+        padding: 4px 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid var(--vp-win-border-dark);
+    }
+
+    .title-text {
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-family: 'Courier New', monospace;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+    }
+
+    .window-controls {
+        display: flex;
+        gap: 2px;
+    }
+
+    .window-controls button {
+        width: 20px; height: 20px;
+        background: var(--vp-win-bg);
+        border-top: 1px solid var(--vp-win-border-light);
+        border-left: 1px solid var(--vp-win-border-light);
+        border-right: 1px solid var(--vp-win-border-dark);
+        border-bottom: 1px solid var(--vp-win-border-dark);
+        font-size: 12px;
+        line-height: 1;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        color: black;
+    }
+
+     
+    .vapor-menu-bar {
+        padding: 4px 10px;
+        display: flex;
+        gap: 15px;
+        font-size: 0.9em;
+        border-bottom: 2px solid var(--vp-win-border-dark);
+        background: var(--vp-win-bg);
+        color: black;
+    }
+    .vapor-menu-bar u { text-decoration: underline; }
+    .music-stat { margin-left: auto; opacity: 0.6; font-family: monospace; }
+
+     
+    .vapor-viewport {
+        height: 70vh;
+        background: linear-gradient(to bottom, #1a0b2e 0%, #4a1c40 100%);
+        position: relative;
+        overflow: hidden;
+        border: 2px solid var(--vp-win-border-dark);
+        margin: 5px;
+        box-shadow: inset 2px 2px 5px rgba(0,0,0,0.5);
+    }
+
+     
+    .vapor-status-bar {
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        background: rgba(0,0,0,0.5);
+        color: var(--vp-cyan);
+        padding: 5px 10px;
+        font-family: 'VT323', monospace;  
+        font-size: 1.2em;
+        z-index: 20;
+        display: flex;
+        border-bottom: 1px solid var(--vp-cyan);
+        backdrop-filter: blur(2px);
+    }
+
+     
+    .perspective-grid {
+        position: absolute;
+        bottom: 0; left: 0; width: 100%; height: 50%;
+        background-image: 
+            linear-gradient(var(--vp-cyan) 1px, transparent 1px),
+            linear-gradient(90deg, var(--vp-cyan) 1px, transparent 1px);
+        background-size: 40px 40px;
+        transform: perspective(300px) rotateX(60deg) translateY(100px) scale(2);
+        opacity: 0.3;
+        pointer-events: none;
+        animation: grid-move 20s linear infinite;
+    }
+    
+    @keyframes grid-move {
+        0% { background-position: 0 0; }
+        100% { background-position: 0 40px; }
+    }
+
+     
+    .retro-sun {
+        position: absolute;
+        bottom: 30%; left: 50%;
+        transform: translateX(-50%);
+        width: 150px; height: 150px;
+        background: linear-gradient(to bottom, var(--vp-yellow), var(--vp-pink));
+        border-radius: 50%;
+        box-shadow: 0 0 20px var(--vp-pink);
+        z-index: 1;
+        mask-image: linear-gradient(to bottom, 
+            black 0%, black 50%, 
+            transparent 50%, transparent 55%, 
+            black 55%, black 65%, 
+            transparent 65%, transparent 70%, 
+            black 70%, black 80%, 
+            transparent 80%, transparent 85%, 
+            black 85%
+        );
+        -webkit-mask-image: linear-gradient(to bottom, 
+            black 0%, black 50%, 
+            transparent 50%, transparent 55%, 
+            black 55%, black 65%, 
+            transparent 65%, transparent 70%, 
+            black 70%, black 80%, 
+            transparent 80%, transparent 85%, 
+            black 85%
+        );
+        opacity: 0.8;
+    }
+
+     
+    .vhs-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: repeating-linear-gradient(
+            to bottom,
+            transparent,
+            transparent 2px,
+            rgba(0,0,0,0.1) 3px
+        );
+        pointer-events: none;
+        z-index: 30;
+        opacity: 0.4;
+    }
+
+     
+    .vapor-scroll-content {
+        padding-top: 60px;
+        position: relative;
+        z-index: 10;
+        animation: scroll-vertical linear infinite;
+    }
+
+    .vapor-viewport:hover .vapor-scroll-content {
+        animation-play-state: paused;
+    }
+
+    @keyframes scroll-vertical {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-50%); }
+    }
+
+     
+    .vapor-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-left: 4px solid var(--vp-pink);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        width: 85%;
+        margin: 0 auto 30px auto;
+        padding: 15px;
+        color: #fff !important;
+        box-shadow: 5px 5px 0 rgba(1, 205, 254, 0.3);
+        transition: transform 0.2s;
+    }
+
+    .vapor-card:hover {
+        transform: scale(1.02);
+        background: rgba(255, 255, 255, 0.15);
+        border-left-color: var(--vp-cyan);
+    }
+
+    .card-header-line {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'VT323', monospace;
+        font-size: 1.1em;
+        color: var(--vp-yellow) !important;
+        margin-bottom: 5px;
+        text-shadow: 1px 1px 0 #000;
+    }
+
+    .card-msg {
+         
+        font-family: 'Noto Serif SC', 'SimSun', serif;
+        font-size: 1.4em;
+        margin: 10px 0;
+        font-style: italic;
+        color: #fff !important;
+        text-shadow: 2px 2px 0 var(--vp-purple);
+        letter-spacing: 1px;
+    }
+
+    .card-user {
+        text-align: right;
+        font-size: 0.9em;
+    }
+
+    .user-name {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--vp-pink) !important;
+        text-shadow: 1px 1px 0 #000;
+        font-family: 'Courier New', monospace;  
+    }
+
+    .vapor-empty {
+        text-align: center;
+        padding-top: 100px;
+        font-size: 2em;
+        color: var(--vp-pink) !important;
+        text-shadow: 2px 2px 0 var(--vp-cyan);
+        font-family: 'Times New Roman', serif;
+    }
+    
+    @media (max-width: 600px) {
+        .vapor-viewport { height: 60vh; }
+        .vapor-card { width: 90%; }
+        .retro-sun { width: 100px; height: 100px; }
+    }
+
+</style>
 
             </main>
         </div>

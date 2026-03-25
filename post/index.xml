@@ -16,14 +16,6 @@
         <description>&lt;img src="https://www.jcxjgit.dpdns.org/p/%E7%BD%91%E7%AB%99%E6%96%BD%E5%B7%A5%E4%B8%AD/building.png" alt="Featured image of post 网站施工中" /&gt;</description>
         </item>
         <item>
-        <title>test at 3/21</title>
-        <link>https://www.jcxjgit.dpdns.org/p/test-at-3/21/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://www.jcxjgit.dpdns.org/p/test-at-3/21/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Git_Github</title>
         <link>https://www.jcxjgit.dpdns.org/p/git_github/</link>
         <pubDate>Wed, 07 Jan 2026 16:08:34 +0800</pubDate>
@@ -173,16 +165,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;可以看到，demo1.txt已经被track了，尚未被提交（to be committed）,demo2.txt属于untraked file。&lt;/p&gt;
-&lt;p&gt;执行&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add demo1.txt
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;#注意，点号必须用英文标点。点号代码此目录下所有文件。&lt;/p&gt;
 &lt;p&gt;打开demo1.txt，写入&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
